@@ -1,0 +1,7 @@
+if game.PlaceId == 286090429 then
+    loadstring(game:HttpGet("https://github.com/"))();
+end
+
+if game.PlaceId == 4690140579 then
+    loadstring(game:HttpGet("https://www.youtube.com/"))();
+end
