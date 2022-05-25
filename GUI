@@ -1,0 +1,79 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AutoEventCompleter = Instance.new("ScreenGui")
+local CoffeeQuest = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TopText = Instance.new("TextLabel")
+local CoffeeQuest_2 = Instance.new("TextLabel")
+
+--Properties:
+
+AutoEventCompleter.Name = "AutoEventCompleter"
+AutoEventCompleter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AutoEventCompleter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+CoffeeQuest.Name = "CoffeeQuest"
+CoffeeQuest.Parent = AutoEventCompleter
+CoffeeQuest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoffeeQuest.BackgroundTransparency = 1.000
+CoffeeQuest.Position = UDim2.new(0.350188673, 0, 0.423982859, 0)
+CoffeeQuest.Size = UDim2.new(0, 342, 0, 111)
+CoffeeQuest.Font = Enum.Font.SourceSans
+CoffeeQuest.Text = "Teleport to Coffee Quest (Takes a little bit)"
+CoffeeQuest.TextColor3 = Color3.fromRGB(0, 0, 0)
+CoffeeQuest.TextScaled = true
+CoffeeQuest.TextSize = 14.000
+CoffeeQuest.TextWrapped = true
+
+Frame.Parent = AutoEventCompleter
+Frame.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Frame.Position = UDim2.new(0.211320758, 0, 0.237687364, 0)
+Frame.Size = UDim2.new(0, 707, 0, 444)
+
+TopText.Name = "TopText"
+TopText.Parent = Frame
+TopText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopText.BackgroundTransparency = 1.000
+TopText.Size = UDim2.new(0, 718, 0, 139)
+TopText.Font = Enum.Font.SourceSans
+TopText.Text = "ARSENAL EVENT AUTO COMPLETER (v1)"
+TopText.TextColor3 = Color3.fromRGB(0, 0, 0)
+TopText.TextScaled = true
+TopText.TextSize = 14.000
+TopText.TextWrapped = true
+
+CoffeeQuest_2.Name = "CoffeeQuest"
+CoffeeQuest_2.Parent = Frame
+CoffeeQuest_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoffeeQuest_2.BackgroundTransparency = 1.000
+CoffeeQuest_2.Position = UDim2.new(0.21499294, 0, 0.391891867, 0)
+CoffeeQuest_2.Size = UDim2.new(0, 414, 0, 111)
+CoffeeQuest_2.Font = Enum.Font.SourceSans
+CoffeeQuest_2.Text = "Teleport to Coffee Quest"
+CoffeeQuest_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+CoffeeQuest_2.TextScaled = true
+CoffeeQuest_2.TextSize = 14.000
+CoffeeQuest_2.TextWrapped = true
+
+-- Scripts:
+
+local function IZKJNCE_fake_script() -- CoffeeQuest.LocalScript 
+	local script = Instance.new('LocalScript', CoffeeQuest)
+
+	local TeleportService = game:GetService("TeleportService")
+	
+	local Place = 4690140579
+	
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		TeleportService:Teleport(Place, player)
+	end)
+	
+	
+end
+coroutine.wrap(IZKJNCE_fake_script)()
