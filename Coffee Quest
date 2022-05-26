@@ -1,0 +1,56 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CoffeeQuestAutoCompleter = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TopText = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+CoffeeQuestAutoCompleter.Name = "CoffeeQuestAutoCompleter"
+CoffeeQuestAutoCompleter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CoffeeQuestAutoCompleter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = CoffeeQuestAutoCompleter
+Frame.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Frame.Position = UDim2.new(0.260377377, 0, 0.240899354, 0)
+Frame.Size = UDim2.new(0, 634, 0, 396)
+
+TopText.Name = "TopText"
+TopText.Parent = Frame
+TopText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopText.BackgroundTransparency = 1.000
+TopText.Position = UDim2.new(0.206624597, 0, 0.0934343487, 0)
+TopText.Size = UDim2.new(0, 373, 0, 90)
+TopText.Font = Enum.Font.SourceSans
+TopText.Text = "Coffee Quest Auto Completer"
+TopText.TextColor3 = Color3.fromRGB(0, 0, 0)
+TopText.TextScaled = true
+TopText.TextSize = 14.000
+TopText.TextWrapped = true
+
+TextButton.Parent = CoffeeQuestAutoCompleter
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.378867924, 0, 0.44218412, 0)
+TextButton.Size = UDim2.new(0, 320, 0, 107)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Teleport to the end"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function FLBEGXJ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-1477, 105, 236)
+	pl.CFrame = location
+end
+coroutine.wrap(FLBEGXJ_fake_script)()
