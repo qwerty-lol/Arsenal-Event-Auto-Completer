@@ -35,7 +35,7 @@ TopText.TextWrapped = true
 TextButton.Parent = CoffeeQuestAutoCompleter
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0.456603765, 0, 0.431477487, 0)
+TextButton.Position = UDim2.new(0.391698122, 0, 0.423982829, 0)
 TextButton.Size = UDim2.new(0, 320, 0, 107)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Teleport to the end"
@@ -46,11 +46,11 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function QMISJD_fake_script() -- TextButton.Script 
+local function KIOPWS_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local location = CFrame.new(-1477, 105, 236)
 	pl.CFrame = location
 end
-coroutine.wrap(QMISJD_fake_script)()
+coroutine.wrap(KIOPWS_fake_script)()
