@@ -3,5 +3,5 @@ if game.PlaceId == 286090429 then
 end
 
 if game.PlaceId == 4690140579 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-lol/Arsenal-Event-Auto-Completer/main/Coffee%20Quest%20(WIP)"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-lol/Arsenal-Event-Auto-Completer/main/Coffee%20Quest"))();
 end
