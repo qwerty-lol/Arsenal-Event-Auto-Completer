@@ -48,10 +48,10 @@ CoffeeQuest.TextWrapped = true
 
 -- Scripts:
 
-local function IDVJ_fake_script() -- AutoEventCompleter.LocalScript 
+local function UCVHLEN_fake_script() -- AutoEventCompleter.LocalScript 
 	local script = Instance.new('LocalScript', AutoEventCompleter)
 
-	local FrameObject = script.Parent.Main
+	local Frame = script.Parent.Main
 	local Open = false
 	
 	local PositionClosed = UDim2.new("-0.478, 0,0.993, 0")
@@ -62,18 +62,18 @@ local function IDVJ_fake_script() -- AutoEventCompleter.LocalScript
 	UserInputService.InputBegan:Connect(function(KeyCode)
 		if KeyCode.KeyCode == Enum.KeyCode.RightShift then
 			if Open then
-				FrameObject:TweenPosition((PositionClosed), "Out", "Quart")
+				Frame:TweenPosition((PositionClosed), "Out", "Quart")
 				Open = false
 			else
 				Open = true
-				FrameObject:TweenPosition((PositionOpen), "Out", "Quint")
+				Frame:TweenPosition((PositionOpen), "Out", "Quint")
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(IDVJ_fake_script)()
-local function HQKDH_fake_script() -- CoffeeQuest.LocalScript 
+coroutine.wrap(UCVHLEN_fake_script)()
+local function MNEZLDC_fake_script() -- CoffeeQuest.LocalScript 
 	local script = Instance.new('LocalScript', CoffeeQuest)
 
 	local TeleportService = game:GetService("TeleportService")
@@ -89,4 +89,4 @@ local function HQKDH_fake_script() -- CoffeeQuest.LocalScript
 	
 	
 end
-coroutine.wrap(HQKDH_fake_script)()
+coroutine.wrap(MNEZLDC_fake_script)()
