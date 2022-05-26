@@ -19,10 +19,10 @@ CoffeeQuest.Name = "CoffeeQuest"
 CoffeeQuest.Parent = AutoEventCompleter
 CoffeeQuest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CoffeeQuest.BackgroundTransparency = 1.000
-CoffeeQuest.Position = UDim2.new(0.350188673, 0, 0.423982859, 0)
-CoffeeQuest.Size = UDim2.new(0, 342, 0, 111)
+CoffeeQuest.Position = UDim2.new(0.350094348, 0, 0.431614548, 0)
+CoffeeQuest.Size = UDim2.new(0, 414, 0, 111)
 CoffeeQuest.Font = Enum.Font.SourceSans
-CoffeeQuest.Text = "Teleport to Coffee Quest (Takes a little bit)"
+CoffeeQuest.Text = "Teleport to Coffee Quest (Will take a little bit to teleport)"
 CoffeeQuest.TextColor3 = Color3.fromRGB(0, 0, 0)
 CoffeeQuest.TextScaled = true
 CoffeeQuest.TextSize = 14.000
@@ -30,7 +30,7 @@ CoffeeQuest.TextWrapped = true
 
 Frame.Parent = AutoEventCompleter
 Frame.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
-Frame.Position = UDim2.new(0.211320758, 0, 0.237687364, 0)
+Frame.Position = UDim2.new(0.233207554, 0, 0.245182008, 0)
 Frame.Size = UDim2.new(0, 707, 0, 444)
 
 TopText.Name = "TopText"
@@ -52,7 +52,7 @@ CoffeeQuest_2.BackgroundTransparency = 1.000
 CoffeeQuest_2.Position = UDim2.new(0.21499294, 0, 0.391891867, 0)
 CoffeeQuest_2.Size = UDim2.new(0, 414, 0, 111)
 CoffeeQuest_2.Font = Enum.Font.SourceSans
-CoffeeQuest_2.Text = "Teleport to Coffee Quest"
+CoffeeQuest_2.Text = "Teleport to Coffee Quest (Will take a little bit to teleport)"
 CoffeeQuest_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 CoffeeQuest_2.TextScaled = true
 CoffeeQuest_2.TextSize = 14.000
@@ -60,7 +60,7 @@ CoffeeQuest_2.TextWrapped = true
 
 -- Scripts:
 
-local function IZKJNCE_fake_script() -- CoffeeQuest.LocalScript 
+local function LQFGCU_fake_script() -- CoffeeQuest.LocalScript 
 	local script = Instance.new('LocalScript', CoffeeQuest)
 
 	local TeleportService = game:GetService("TeleportService")
@@ -76,4 +76,4 @@ local function IZKJNCE_fake_script() -- CoffeeQuest.LocalScript
 	
 	
 end
-coroutine.wrap(IZKJNCE_fake_script)()
+coroutine.wrap(LQFGCU_fake_script)()
