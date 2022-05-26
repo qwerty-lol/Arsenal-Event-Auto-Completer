@@ -60,18 +60,18 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function DZSORJ_fake_script() -- TextButton.Script 
+local function QDUBJVO_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local location = CFrame.new(-1477, 105, 236)
 	pl.CFrame = location
 end
-coroutine.wrap(DZSORJ_fake_script)()
-local function VOEZ_fake_script() -- CoffeeQuestAutoCompleter.LocalScript 
+coroutine.wrap(QDUBJVO_fake_script)()
+local function NYCBWON_fake_script() -- CoffeeQuestAutoCompleter.LocalScript 
 	local script = Instance.new('LocalScript', CoffeeQuestAutoCompleter)
 
-	local FrameObject = script.Parent.Main
+	local Frame = script.Parent.Main
 	local Open = false
 	
 	local PositionClosed = UDim2.new("-0.478, 0,0.993, 0")
@@ -82,13 +82,13 @@ local function VOEZ_fake_script() -- CoffeeQuestAutoCompleter.LocalScript
 	UserInputService.InputBegan:Connect(function(KeyCode)
 		if KeyCode.KeyCode == Enum.KeyCode.RightShift then
 			if Open then
-				FrameObject:TweenPosition((PositionClosed), "Out", "Quart")
+				Frame:TweenPosition((PositionClosed), "Out", "Quart")
 				Open = false
 			else
 				Open = true
-				FrameObject:TweenPosition((PositionOpen), "Out", "Quint")
+				Frame:TweenPosition((PositionOpen), "Out", "Quint")
 			end
 		end
 	end)
 end
-coroutine.wrap(VOEZ_fake_script)()
+coroutine.wrap(NYCBWON_fake_script)()
