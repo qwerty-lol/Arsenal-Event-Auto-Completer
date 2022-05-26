@@ -24,8 +24,8 @@ TopText.Name = "TopText"
 TopText.Parent = Frame
 TopText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TopText.BackgroundTransparency = 1.000
-TopText.Position = UDim2.new(0.206624597, 0, 0.0934343487, 0)
-TopText.Size = UDim2.new(0, 373, 0, 90)
+TopText.Position = UDim2.new(0.167192429, 0, 0.0934343413, 0)
+TopText.Size = UDim2.new(0, 421, 0, 112)
 TopText.Font = Enum.Font.SourceSans
 TopText.Text = "Coffee Quest Auto Completer"
 TopText.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -38,7 +38,7 @@ GUIClose.Parent = Frame
 GUIClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GUIClose.BackgroundTransparency = 1.000
 GUIClose.Position = UDim2.new(0.288643539, 0, 0.808080792, 0)
-GUIClose.Size = UDim2.new(0, 268, 0, 64)
+GUIClose.Size = UDim2.new(0, 345, 0, 75)
 GUIClose.Font = Enum.Font.SourceSans
 GUIClose.Text = "Right Shift to close GUI"
 GUIClose.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -49,8 +49,8 @@ GUIClose.TextWrapped = true
 TextButton.Parent = CoffeeQuestAutoCompleter
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0.551698089, 0, 0.485010684, 0)
-TextButton.Size = UDim2.new(0, 320, 0, 107)
+TextButton.Position = UDim2.new(0.478490531, 0, 0.463597417, 0)
+TextButton.Size = UDim2.new(0, 368, 0, 127)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Teleport to the end"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -60,11 +60,35 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function AIJE_fake_script() -- TextButton.Script 
+local function DZSORJ_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local location = CFrame.new(-1477, 105, 236)
 	pl.CFrame = location
 end
-coroutine.wrap(AIJE_fake_script)()
+coroutine.wrap(DZSORJ_fake_script)()
+local function VOEZ_fake_script() -- CoffeeQuestAutoCompleter.LocalScript 
+	local script = Instance.new('LocalScript', CoffeeQuestAutoCompleter)
+
+	local FrameObject = script.Parent.Main
+	local Open = false
+	
+	local PositionClosed = UDim2.new("-0.478, 0,0.993, 0")
+	local PositionOpen = UDim2.new("0.358, 0,0.288, 0")
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(KeyCode)
+		if KeyCode.KeyCode == Enum.KeyCode.RightShift then
+			if Open then
+				FrameObject:TweenPosition((PositionClosed), "Out", "Quart")
+				Open = false
+			else
+				Open = true
+				FrameObject:TweenPosition((PositionOpen), "Out", "Quint")
+			end
+		end
+	end)
+end
+coroutine.wrap(VOEZ_fake_script)()
