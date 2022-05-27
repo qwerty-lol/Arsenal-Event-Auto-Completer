@@ -60,7 +60,7 @@ CoffeeQuest.TextWrapped = true
 
 -- Scripts:
 
-local function NNKR_fake_script() -- Close.LocalScript 
+local function AJOWR_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -68,12 +68,12 @@ local function NNKR_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(NNKR_fake_script)()
-local function PKAOOW_fake_script() -- CoffeeQuest.Script 
+coroutine.wrap(AJOWR_fake_script)()
+local function VJGOYS_fake_script() -- CoffeeQuest.Script 
 	local script = Instance.new('Script', CoffeeQuest)
 
 	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local location = CFrame.new(-1477, 105, 236)
 	pl.CFrame = location
 end
-coroutine.wrap(PKAOOW_fake_script)()
+coroutine.wrap(VJGOYS_fake_script)()
