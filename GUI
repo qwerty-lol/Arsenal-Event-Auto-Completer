@@ -13,7 +13,6 @@ local CoffeeQuest = Instance.new("TextButton")
 
 AutoEventCompleter.Name = "AutoEventCompleter"
 AutoEventCompleter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-AutoEventCompleter.Enabled = false
 AutoEventCompleter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = AutoEventCompleter
@@ -61,29 +60,22 @@ CoffeeQuest.TextWrapped = true
 
 -- Scripts:
 
-local function KADTUHV_fake_script() -- Close.LocalScript 
+local function UNAETT_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
-	
 end
-coroutine.wrap(KADTUHV_fake_script)()
-local function MFDPED_fake_script() -- CoffeeQuest.LocalScript 
+coroutine.wrap(UNAETT_fake_script)()
+local function IZXKAG_fake_script() -- CoffeeQuest.LocalScript 
 	local script = Instance.new('LocalScript', CoffeeQuest)
 
-	local TeleportService = game:GetService("TeleportService")
+	local teleservice = game:GetService("TeleportService")
+	local experience = 4690140579
 	
-	local Place = 4690140579
-	
-	local player = game.Players.LocalPlayer
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	
-		TeleportService:Teleport(Place, player)
+	script.Parent.MouseButton1Click:Connect(function(player)
+		teleservice:Teleport(experience, player)
 	end)
-	
-	
 end
-coroutine.wrap(MFDPED_fake_script)()
+coroutine.wrap(IZXKAG_fake_script)()
