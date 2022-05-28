@@ -8,8 +8,12 @@ local Frame = Instance.new("Frame")
 local TopText = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local CoffeeQuest = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local CoffeeQuest = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
@@ -51,6 +55,34 @@ Close.TextWrapped = true
 
 UICorner.Parent = Close
 
+TextLabel.Parent = Close
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-6.86170244, 0, 8.69387817, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Ui Made By Rosploit"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_2.Parent = TextLabel
+
+TextLabel_2.Parent = Close
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-6.86170244, 0, 8.06122494, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Scripting By qwerty"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_3.Parent = TextLabel_2
+
 CoffeeQuest.Name = "CoffeeQuest"
 CoffeeQuest.Parent = Frame
 CoffeeQuest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -65,11 +97,11 @@ CoffeeQuest.TextSize = 14.000
 CoffeeQuest.TextStrokeTransparency = 0.000
 CoffeeQuest.TextWrapped = true
 
-UICorner_2.Parent = Frame
+UICorner_4.Parent = Frame
 
 -- Scripts:
 
-local function OUUSE_fake_script() -- Close.LocalScript 
+local function PZUO_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -77,12 +109,12 @@ local function OUUSE_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(OUUSE_fake_script)()
-local function ZAYCM_fake_script() -- CoffeeQuest.Script 
+coroutine.wrap(PZUO_fake_script)()
+local function HHFA_fake_script() -- CoffeeQuest.Script 
 	local script = Instance.new('Script', CoffeeQuest)
 
 	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local location = CFrame.new(-1477, 105, 236)
 	pl.CFrame = location
 end
-coroutine.wrap(ZAYCM_fake_script)()
+coroutine.wrap(HHFA_fake_script)()
