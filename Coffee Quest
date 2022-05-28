@@ -101,19 +101,19 @@ UICorner_4.Parent = Frame
 
 -- Scripts:
 
-local function HDWYV_fake_script() -- Close.Script 
+local function CUEF_fake_script() -- Close.Script 
 	local script = Instance.new('Script', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(HDWYV_fake_script)()
-local function NRKBGSU_fake_script() -- CoffeeQuest.Script 
+coroutine.wrap(CUEF_fake_script)()
+local function LWJEUH_fake_script() -- CoffeeQuest.Script 
 	local script = Instance.new('Script', CoffeeQuest)
 
 	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local location = CFrame.new(-1477, 105, 236)
 	pl.CFrame = location
 end
-coroutine.wrap(NRKBGSU_fake_script)()
+coroutine.wrap(LWJEUH_fake_script)()
