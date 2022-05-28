@@ -19,7 +19,6 @@ local UICorner_4 = Instance.new("UICorner")
 
 AutoEventCompleter.Name = "AutoEventCompleter"
 AutoEventCompleter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-AutoEventCompleter.Enabled = false
 AutoEventCompleter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = AutoEventCompleter
@@ -103,23 +102,23 @@ UICorner_4.Parent = Frame
 
 -- Scripts:
 
-local function NNJVPC_fake_script() -- Close.LocalScript 
-	local script = Instance.new('LocalScript', Close)
+local function EPLL_fake_script() -- Close.Script 
+	local script = Instance.new('Script', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 	print("Ui made by RoSploit")
 end
-coroutine.wrap(NNJVPC_fake_script)()
-local function TTSQLUS_fake_script() -- CoffeeQuest.LocalScript 
-	local script = Instance.new('LocalScript', CoffeeQuest)
+coroutine.wrap(EPLL_fake_script)()
+local function HRDLIS_fake_script() -- CoffeeQuest.Script 
+	local script = Instance.new('Script', CoffeeQuest)
 
-	local teleservice = game:GetService("TeleportService")
-	local experience = 4690140579
+	local Teleportation = game:GetService("TeleportService")
+	local Place = 4690140579
 	
 	script.Parent.MouseButton1Click:Connect(function(player)
-		teleservice:Teleport(experience, player)
+		Teleportation:Teleport(Place, player)
 	end)
 end
-coroutine.wrap(TTSQLUS_fake_script)()
+coroutine.wrap(HRDLIS_fake_script)()
