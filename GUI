@@ -7,12 +7,19 @@ local AutoEventCompleter = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TopText = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Scredit2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Credit1 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
 local CoffeeQuest = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
 AutoEventCompleter.Name = "AutoEventCompleter"
 AutoEventCompleter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AutoEventCompleter.Enabled = false
 AutoEventCompleter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = AutoEventCompleter
@@ -38,37 +45,74 @@ Close.Parent = Frame
 Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Close.Position = UDim2.new(0.872054935, 0, -0.00210078084, 0)
 Close.Size = UDim2.new(0, 94, 0, 49)
-Close.Font = Enum.Font.SourceSans
+Close.Font = Enum.Font.Antique
 Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextScaled = true
 Close.TextSize = 14.000
+Close.TextStrokeTransparency = 0.000
 Close.TextWrapped = true
 
+UICorner.Parent = Close
+
+Scredit2.Name = "Scredit2"
+Scredit2.Parent = Close
+Scredit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scredit2.BackgroundTransparency = 1.000
+Scredit2.Position = UDim2.new(-6.8640213, 0, 8.31052589, 0)
+Scredit2.Size = UDim2.new(1.28426087, 0, 0.806346476, 0)
+Scredit2.Font = Enum.Font.SourceSans
+Scredit2.Text = "Scripting by qwerty(Half by Rosploit)"
+Scredit2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scredit2.TextScaled = true
+Scredit2.TextSize = 14.000
+Scredit2.TextWrapped = true
+
+UICorner_2.Parent = Scredit2
+
+Credit1.Name = "Credit1"
+Credit1.Parent = Close
+Credit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit1.BackgroundTransparency = 1.000
+Credit1.Position = UDim2.new(-6.8640213, 0, 9.1261301, 0)
+Credit1.Size = UDim2.new(1.28426087, 0, 0.602264822, 0)
+Credit1.Font = Enum.Font.SourceSans
+Credit1.Text = "Ui made by RoSploit"
+Credit1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credit1.TextScaled = true
+Credit1.TextSize = 14.000
+Credit1.TextWrapped = true
+
+UICorner_3.Parent = Credit1
+
 CoffeeQuest.Name = "CoffeeQuest"
-CoffeeQuest.Parent = AutoEventCompleter
+CoffeeQuest.Parent = Frame
 CoffeeQuest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CoffeeQuest.BackgroundTransparency = 1.000
-CoffeeQuest.Position = UDim2.new(0.335000008, 0, 0.440179884, 0)
+CoffeeQuest.BackgroundTransparency = 0.500
+CoffeeQuest.Position = UDim2.new(0.218626529, 0, 0.433877349, 0)
 CoffeeQuest.Size = UDim2.new(0, 414, 0, 111)
-CoffeeQuest.Font = Enum.Font.SourceSans
+CoffeeQuest.Font = Enum.Font.Oswald
 CoffeeQuest.Text = "Teleport to Coffee Quest (Will take a little bit to teleport)"
-CoffeeQuest.TextColor3 = Color3.fromRGB(0, 0, 0)
+CoffeeQuest.TextColor3 = Color3.fromRGB(255, 255, 255)
 CoffeeQuest.TextScaled = true
 CoffeeQuest.TextSize = 14.000
+CoffeeQuest.TextStrokeTransparency = 0.000
 CoffeeQuest.TextWrapped = true
+
+UICorner_4.Parent = Frame
 
 -- Scripts:
 
-local function UNAETT_fake_script() -- Close.LocalScript 
+local function NNJVPC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
+	print("Ui made by RoSploit")
 end
-coroutine.wrap(UNAETT_fake_script)()
-local function IZXKAG_fake_script() -- CoffeeQuest.LocalScript 
+coroutine.wrap(NNJVPC_fake_script)()
+local function TTSQLUS_fake_script() -- CoffeeQuest.LocalScript 
 	local script = Instance.new('LocalScript', CoffeeQuest)
 
 	local teleservice = game:GetService("TeleportService")
@@ -78,4 +122,4 @@ local function IZXKAG_fake_script() -- CoffeeQuest.LocalScript
 		teleservice:Teleport(experience, player)
 	end)
 end
-coroutine.wrap(IZXKAG_fake_script)()
+coroutine.wrap(TTSQLUS_fake_script)()
